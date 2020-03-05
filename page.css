@@ -1,8 +1,9 @@
 .image {
-  position : relative;
+  width: 80%;
+	vertical-align: middle;
  }
  
- .image .text {
+.text {
   text-aglin : center;
  }
   
