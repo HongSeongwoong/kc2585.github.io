@@ -1,3 +1,12 @@
+.wrap {
+  width: 40%;
+	margin: 10px auto;
+	border: 1px;
+	position: relative;
+}
+
+
+
 .image {
   width: 50%;
   vertical-align: middle;
@@ -5,5 +14,9 @@
  
 .text {
   text-aglin : center;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate( -50%, -50% );
  }
   
