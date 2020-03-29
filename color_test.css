@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* All Device */
+/*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+body{
+    margin: 0;
+}
+header{
+    height: 80px;
+}
+header h1{
+    margin : 0;
+    line-height: 80px;
+    text-align: center;
+}
+article{
+    height: 450px;
+    text-align: center;
+}
+img{
+    width: 120px;
+    height: 120px;
+    background-color: black;
+}
+footer{
+    height: 80px;
+    background-color:  #6FCF97;
+}
