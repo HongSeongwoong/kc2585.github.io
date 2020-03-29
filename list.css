@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* All Device */
+/*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+body{
+    margin: 0;
+}
+header{
+    height: 80px;
+    background-color: #6FCF97;
+}
+header h1{
+    margin : 0;
+    line-height: 80px;
+    text-align: center;
+}
+article{
+    height: 450px;
+}
+.list{
+    position:relative;
+    height: 100%;
+}
+.list ul{
+    padding: 0;
+}
+.list ul li{
+    list-style: none;
+    left: 0; right: 0;
+    margin-left:auto; margin-right:auto;
+    display: block;
+    margin-top: 40px;
+    height: 56px;
+    width: 256px;
+    border: 2px solid #27AE60;
+    border-radius: 6px;
+    line-height: 56px;
+    text-align: center;
+    color: #27AE60;
+}
+footer{
+    height: 80px;
+    background-color:  #6FCF97;
+}
+/* Mobile Device */
+/*768px 미만 해상도의 모바일 기기를 위한 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨. 미디어 쿼리를 지원하지 않는 모바일 기기를 위해 미디어 쿼리 구문을 사용하지 않는다.*/
+
+/* Tablet & Desktop Device */
+@media all and (min-width:768px) {
+/*사용자 해상도가 768px 이상일 때 이 코드가 실행됨. 테블릿과 데스크톱의 공통 코드를 작성한다.*/
+}
+
+
