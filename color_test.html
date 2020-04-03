@@ -11,6 +11,7 @@
       <h1>잔디밭</h1>
     </header>
     <article>
+      <div id="test">
         <div id="question">
             <h3>마음에 드는 순서대로 4가지색을 선택해주세요 &lt;중복허용&gt;</h3>
         </div>
@@ -22,8 +23,18 @@
             <img id="pupple" onclick="selecting(this.id)" src="./image/pupple.png" alt="pupple">
             <img id="yellow" onclick="selecting(this.id)" src="./image/yellow.png" alt="yellow">
             <img id="green" onclick="selecting(this.id)"src="./image/green.png" alt="green">
-            <span id="count">gigi</span>
         </div>
+
+        <div id="show"></div>
+
+        <div class="button" id="reset" onclick="resetButton()">
+            다시 선택
+        </div>
+        <div class="button" id="result" onclick="resultButton()">
+          결과 확인
+        </div>
+      </div>   
+
     </article>
     <footer>
       <div class="advertisement">

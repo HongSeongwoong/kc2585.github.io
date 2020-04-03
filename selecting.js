@@ -1,16 +1,34 @@
 var selectedArray = new Array;
+var showArray = new Array;
+
 function selecting(idName){
-    if(selectedArray.length<4){
+    if(selectedArray.length<4&&showArray.length<4){
         selectedArray.push(idName+selectedArray.length);
-        printCount(idName);
-    }
-    else{
-        alert("가득찼어 임마");
-        for(i=0;i<selectedArray.length;i++){
-            alert(selectedArray[i]);
-        }
+        showArray.push(idName);
+        showSelected();
     }
 };
-function printCount(idName){
-    document.getElementById("count").innerHTML=idName+" 선택했오";
+
+function showSelected(){
+    if(showArray.length>0){
+        document.getElementById("show").innerHTML=showArray+" 선택했습니다.";
+    }
+    else{
+        document.getElementById("show").innerHTML=""
+    }
+}
+
+function resetButton(){
+    while(showArray.length){
+        showArray.pop();
+        selectedArray.pop();
+    }
+    showSelected();
+}
+
+function resultButton(){
+    if(showArray.length==4){
+        var test=document.getElementById("test");
+        test.style.display="none";
+    }
 }
