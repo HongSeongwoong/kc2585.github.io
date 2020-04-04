@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: "SsukSsuk";
+    src: url('./fonts/Cafe24Ssukssuk.ttf') format('truetype');
+}
+
+/* All Device */
+/*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+body{
+    margin: 0;
+    font-family: "SsukSsuk";
+}
+#question{
+    margin-top: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+}
+
+.box-radio-input input[type="radio"]{
+    display:none;
+}
+    
+.box-radio-input input[type="radio"] + span{
+    display:inline-block;
+    background:none;
+    border:1px solid #dfdfdf; 
+    padding:0px 10px;
+    text-align:center;
+    height:35px;
+    line-height:33px;
+    font-weight:500;
+    cursor:pointer;
+}
+    
+.box-radio-input input[type="radio"]:checked + span{
+border:1px solid #27AE60;
+background:#27AE60;
+color:#fff;
+}
+    
