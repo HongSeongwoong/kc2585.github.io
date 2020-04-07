@@ -1,8 +1,5 @@
 var selectedArray = new Array;
 var showArray = new Array;
-var slideIndex=0;
-
-showSlide();
 
 function selecting(idName){
     if(selectedArray.length<4&&showArray.length<4){
@@ -41,29 +38,8 @@ function resultButton(){
 
 function showResult(){
     for(i=0;i<4;i++){
-        var result_idx = document.getElementById(selectedArray[i]);
-        result_idx.style.display="block";
-    }
-}
+        var x = document.getElementById(selectedArray[i]);
+        x.style.display="block";
+    }    
+} 
 
-function showSlide(){
-    var slides = document.getElementsByClassName("idx");
-    for(i=0;i<4;i++){
-        slides[i].style.display="none";
-    }
-    slideIndex= slideIndex%slides.length;
-    slides[slideIndex].style.display = "block";
-}
-
-function showNextSlide(){
-    slideIndex++;
-    showSlide();
-}
-
-function showPrevSlide(){
-    slideIndex--;
-    if(slideIndex<0){
-        slideIndex=3;
-    }
-    showSlide();
-}

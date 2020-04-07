@@ -7,25 +7,31 @@
 /* All Device */
 /*모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
 body{
-    margin: 0 20px;
+    margin: 0;
     font-family: "SsukSsuk";
+    
 }
 header{
     height: 20vw;
-    border-bottom: solid 1vw #6FCF97;
+    margin: 0 20px;
+    border-bottom:solid 1vw #6FCF97;
 }
-header h1{
-    margin : 0;
-    line-height: 80px;
-    text-align: center;
+header h2{
+    margin-top: 0;
+    margin-bottom: 5vw;
+    padding-top: 20px;
+    padding-left: 10px;
 }
 article{
     text-align: center;
+    height: auto;
+    background-color: white;
 }
 article h3{
-    margin-top: 5vw;
+    margin-top: 0;
     margin-left: 10vw;
     margin-right: 10vw;
+    padding-top: 5vw;
 }
 img{
     width: 23vw;
@@ -33,6 +39,7 @@ img{
     background-color: black;
 }
 #test{
+    margin: 0 20px;
     height: auto;
 }
 #count{
@@ -60,15 +67,27 @@ img{
 
 #hide{
   display: none;
-  color: white;
+  
 }
 .idx{
+    margin: 20px 20px;
+    margin-top: 0;
     padding: 10px;
-    background-color: #6FCF97;
+    border-bottom:solid 1vw #6FCF97;
     text-align: justify;
     display: inline-block;
-    border-radius: 6px;
-    font-size: 25px;
+    font-size: 1.2em;
+    background-color: white;
+}
+.def{
+    display: table-cell;
+    vertical-align: middle;
+    height: 30vw;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #00FF80;
+    
 }
 ul{
     padding: 0;
@@ -76,12 +95,73 @@ ul{
 li{
     display: none;
 }
-.cursor{
-    margin-top: 30px;
-    
+li .red{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #FF0000;
 }
-.cursor img{
-    background-color: white;
-    width: 70px;
-    height: 20vw;
+li .blue{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #0040FF;
+}
+li .orange{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #FF4000;
+}
+li .white{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #F2F2F2;
+}
+li .pupple{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #8000FF;
+}
+li .yellow{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #FFFF00;
+}
+li .green{
+    display: table-cell;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding-top: 20vw;
+    height: 40vw;
+    font-size: 1.1em;
+    padding:10px;
+    background-color: #80FF00;
 }
